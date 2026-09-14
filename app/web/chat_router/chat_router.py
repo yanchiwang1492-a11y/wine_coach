@@ -15,6 +15,7 @@ async def chat(question:str,user_id:str):
         try:
 
             async for x in test_agent(question):
+
                 # False 流式未结束
                 data = {"data": x, "done": False}
                 yield f"data: {json.dumps(data, ensure_ascii=False)}\n\n"

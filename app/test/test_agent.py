@@ -6,7 +6,7 @@ import asyncio #异步执行库
 #演示智能体创建
 async def test_agent(q):
     # 1 创建一个大模型
-    model = MyModel.get_local_model()
+    model = MyModel.get_model()
     #2 创建一个工具
     tools=[send_email_tool]
     #3 创建提示词,系统提示词

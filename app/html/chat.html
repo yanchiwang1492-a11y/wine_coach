@@ -695,7 +695,7 @@
             el: '#app',
             data: {
                 chatList: [],
-                input: '',
+                input: '请给767920412@qq.com 发送一封邮件，通知他来上课',
                 userId: 'user_' + Math.random().toString(36).substring(2, 8),
                 historyList: [
                     { id: 1, title: 'Vue响应式原理', messages: [] },
@@ -827,34 +827,38 @@
                     const eve = new EventSource('/chat?' + params);
                     this.eventSource = eve;
 
+                    const aiMsg = { role: 'bot', content: '正在思考，请稍等....' };
+                    this.chatList.push(aiMsg);
                     // 添加机器人占位消息
-                    const botMsgIndex = this.chatList.push({ role: 'bot', content: '' }) - 1;
+                    //const botMsgIndex = this.chatList.push({ role: 'bot', content: '' }) - 1;
 
                     eve.onmessage = (e) => {
-                        console.log('流式输出:', e.data);
-                        const currentContent = this.chatList[botMsgIndex].content;
-                        const newContent = currentContent + e.data;
-                        // 使用 $set 确保响应式更新
-                        this.$set(this.chatList, botMsgIndex, {
-                            role: 'bot',
-                            content: newContent
-                        });
-                        this.scrollToBottom();
+
+                      const data = JSON.parse(e.data);
+                      if (data.done) {
+                          eve.close();
+                      } else {
+                          if (aiMsg.content.indexOf("正在思考") > -1) {
+                              aiMsg.content = "";
+                          }
+                          aiMsg.content += data.data;  // 追加文本片段
+                          this.scrollToBottom();
+                      }
                     };
 
-                    eve.onerror = (err) => {
-                        console.error('SSE 错误:', err);
-                        if (this.chatList[botMsgIndex] && this.chatList[botMsgIndex].content === '') {
-                            this.$set(this.chatList, botMsgIndex, {
-                                role: 'bot',
-                                content: '⚠️ 连接出错，请稍后重试。'
-                            });
-                        }
-                        eve.close();
-                        if (this.eventSource === eve) {
-                            this.eventSource = null;
-                        }
-                    };
+                    // eve.onerror = (err) => {
+                    //     console.error('SSE 错误:', err);
+                    //     if (this.chatList[botMsgIndex] && this.chatList[botMsgIndex].content === '') {
+                    //         this.$set(this.chatList, botMsgIndex, {
+                    //             role: 'bot',
+                    //             content: '⚠️ 连接出错，请稍后重试。'
+                    //         });
+                    //     }
+                    //     eve.close();
+                    //     if (this.eventSource === eve) {
+                    //         this.eventSource = null;
+                    //     }
+                    // };
                 },
                 // 滚动到底部
                 scrollToBottom() {
