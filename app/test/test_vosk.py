@@ -32,7 +32,14 @@ def test():
     while True:
            data = re.AcceptWaveform(stream.read(4096))
            if data:
-               print(f"{re.Result()}")
+               #print(f"{re.Result()}")
+               #类型转换
+               rs = json.loads(re.Result())
+               #print(f"类型:{type(rs)}")
+               #print(rs["text"])
+               if rs["text"]:
+                   print(f"用户说的话:{rs['text']}")
+
 if __name__ =="__main__":
     test()
 
