@@ -52,6 +52,6 @@ def mysql_tool(sql:str) -> str:
             con.close()
 if __name__ =='__main__':
     print(mysql_tool.invoke({
-        "sql":f"select department from user_info where user_id = '1'"
+        "sql":f"select * from question_bank where question_subject='python' ORDER BY RAND() desc LIMIT 1"
     }))
 

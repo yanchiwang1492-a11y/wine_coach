@@ -41,11 +41,11 @@ async def vosk(ws:WebSocket):
         # 第一次握手，创建链接
         await ws.accept()
         print("第一次握手，创建链接")
-        # 开启语音
+        # 开启语音,发送数据给客户端
         await vosk_agent.speak(ws)
-        while True:
-            #接收客户端发送的数据
-            await ws.receive_text()
+        # while True:
+        #     #接收客户端发送的数据
+        #     await ws.receive_text()
     except Exception as e:
         print("异常:", e)
 

@@ -40,9 +40,9 @@ class MyModel:
                 #api_key="ddd",
                 base_url=os.getenv("LOCAL_URL"),
                 streaming=True,#开启流式输出
-                # extra_body={
-                #     "enable_thinking": False # 是否开启思考过程
-                # }
+                extra_body={
+                    "enable_thinking": False # 是否开启思考过程
+                }
             )
         return MyModel._local_model
     #加载语音模型
