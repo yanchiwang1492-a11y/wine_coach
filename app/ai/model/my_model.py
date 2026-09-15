@@ -1,6 +1,7 @@
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import os
+from vosk import Model
 #读取配置文件
 load_dotenv()
 """
@@ -11,6 +12,8 @@ class MyModel:
     _model = None
     #定义本地模型私有属性
     _local_model=None
+    #定义语音模型
+    _vosk_model =None
     #定义静态函数,在线模型
     @staticmethod
     def get_model():
@@ -42,6 +45,16 @@ class MyModel:
                 # }
             )
         return MyModel._local_model
+    #加载语音模型
+    @staticmethod
+    def get_vosk_model():
+        #判断_model 是否未空
+        if MyModel._vosk_model is None:
+            #创建模型
+            model_path = os.getenv("VOSK_PATH")
+            # 加载模型
+            MyModel._vosk_model = Model(model_path=model_path)
+        return MyModel._vosk_model
 if __name__ =="__main__":
     model = MyModel.get_local_model()
     rs = model.invoke("你好")

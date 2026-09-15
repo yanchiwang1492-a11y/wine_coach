@@ -677,6 +677,10 @@
                         <span>发送</span>
                         <span style="font-size: 1.1rem;">↵</span>
                     </button>
+                    <button type="button" @click="sendVosk" :disabled="startVosk">
+                        <span>开启语音</span>
+                        <span style="font-size: 1.1rem;">↵</span>
+                    </button>
                 </div>
             </div>
         </main>
@@ -694,6 +698,8 @@
         new Vue({
             el: '#app',
             data: {
+                startVosk: false,//是否禁止语音按钮,true 是禁用，false 是启用
+                ws:null,// weosocket对象
                 chatList: [],
                 input: '请给767920412@qq.com 发送一封邮件，通知他来上课',
                 userId: 'user_' + Math.random().toString(36).substring(2, 8),
@@ -793,6 +799,31 @@
                     this.$nextTick(() => {
                         if (this.$refs.inputField) this.$refs.inputField.focus();
                     });
+                },
+                sendVosk(){//开启语音
+                                 //创建websocket 对象
+                        this.ws = new WebSocket("ws://localhost:8000/vosk");
+                        const self = this;
+                        //开启链接
+                        this.ws.onopen = function (e){
+                                console.log("链接成功");
+                        }
+                        //接收服务端的数据
+                        this.ws.onmessage =function (e){
+                            console.log("服务端的数据:",e.data);
+                            if (e.data.indexOf("开始说话") > -1){
+                                alert("开始说话");
+                                //禁止语音按钮
+                                self.startVosk = true;
+                            }else{
+                                //显示在输入框
+                                self.input = e.data;
+                                //开启语音按钮
+                                self.startVosk = false;
+                                //直接发送信息,不需要点发送按钮
+                                self.send()
+                            }
+                        }
                 },
                 // 发送消息
                 send() {

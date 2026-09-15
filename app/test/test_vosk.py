@@ -11,6 +11,7 @@ def test():
     print("模型路径:", model_path)
     #加载模型
     model = Model(model_path=model_path)
+    print("模型加载完成")
     #------------加载本地音频配置--------------
     p = pyaudio.PyAudio()  # 创建PyAudio实例管理音频设备
 
@@ -39,6 +40,7 @@ def test():
                #print(rs["text"])
                if rs["text"]:
                    print(f"用户说的话:{rs['text']}")
+
 
 if __name__ =="__main__":
     test()
