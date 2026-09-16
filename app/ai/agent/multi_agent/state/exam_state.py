@@ -28,6 +28,8 @@ class ExamState(TypedDict):
     #-----------------评价节点---
     #评价结果
     evaluation:str
+    #考试状态
+    exam_step:str
 
 
 

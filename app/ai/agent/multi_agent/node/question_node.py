@@ -33,7 +33,8 @@ def question_node(state:ExamState):
     return {
         "messages":[AIMessage(content=ai_msg)],
         "questions":question_list,
-        "current":current
+        "current":current,
+        "exam_step":"question"
     }
 
 if __name__ =="__main__":

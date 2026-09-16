@@ -32,7 +32,8 @@ def intent_node(state:ExamState):
     return {
          "messages":[AIMessage(content=ai_msg)],
          "course":data["course"],
-         "total":data["num"]
+         "total":data["num"],
+         "exam_step":"intent"
     }
 
 
