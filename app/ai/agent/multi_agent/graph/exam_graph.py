@@ -2,6 +2,8 @@ from app.ai.agent.multi_agent.state.exam_state import ExamState
 from app.ai.agent.multi_agent.node.intent_node import intent_node
 from app.ai.agent.multi_agent.node.question_node import question_node
 from app.ai.agent.multi_agent.node.manager_node import manager_node
+from app.ai.agent.multi_agent.node.answer_node import answer_node
+from app.ai.agent.multi_agent.node.evaluate_node import evaluate_node
 from langgraph.graph import StateGraph,START,END
 from langchain_core.messages import HumanMessage
 import asyncio
@@ -22,11 +24,16 @@ class ExamGraph:
         graph.add_node("intent",intent_node)
         graph.add_node("question",question_node)
         graph.add_node("manager", manager_node)
+        graph.add_node("answer", answer_node)
+        graph.add_node("evaluate", evaluate_node)
 
         #画边
         graph.add_edge(START,"manager")
         graph.add_edge("intent","manager")
         graph.add_edge("question","manager")
+        graph.add_edge("answer", "manager")
+        graph.add_edge("evaluate", "manager")
+
         #编译
         self.agent = graph.compile(checkpointer=self.memory)
         return self.agent

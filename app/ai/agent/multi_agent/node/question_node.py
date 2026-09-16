@@ -6,6 +6,7 @@ from langchain_core.messages import AIMessage
 出题节点，随机抽取一道未出过的题目：
 """
 def question_node(state:ExamState):
+
     #课程名称
     course = state["course"]
     #题目数量
@@ -16,33 +17,39 @@ def question_node(state:ExamState):
     current = state.get("current",0)+1
     #判断题目列表是否有数据
     if len(question_list) >0:
-        rs = ",".join([i["id"] for i in question_list])
+
+        rs = ",".join([str(i["id"]) for i in question_list])
+
         sql =f"select * from question_bank where question_subject='{course}' and question_id not in ({rs})  ORDER BY RAND() desc LIMIT 1"
+
     else:
+
         sql =f"select * from question_bank where question_subject='{course}' ORDER BY RAND() desc LIMIT 1"
+
     #调用mysql_tool
     rs = mysql_tool.invoke({"sql":sql})
+
     #把rs字符粗转成元组
     data = ast.literal_eval(rs)
+
     #添加到题库列表
     question_list.append(
         {"id":data[0][0],"question":data[0][1],"answer":data[0][2]}
     )
+
     #ai回复消息
     ai_msg = f"\n第{current}题:{data[0][1]}\n"
+
     return {
         "messages":[AIMessage(content=ai_msg)],
-        "questions":question_list,
+        "questions":question_list,#题目列表
+        "total":num,#题目数量
         "current":current,
+        "question_id":data[0][0],#题目编号
         "exam_step":"question"
     }
 
 if __name__ =="__main__":
-    data =[
-        {"id":1,"question":"sdfsdfs"},
-        {"id": 2, "question": "sdfsdfs"},
-       {"id": 3 , "question": "sdfsdfs"},
-    ]
-    rs =",".join([str(i["id"]) for i in data])
+    question_list=[{'id': 87, 'question': 'Python中列表和元组的区别？分别在什么场景使用？', 'answer': '列表可变，元组不可变；列表用[]，元组用()。列表适合需要修改的数据集，元组适合固定数据（如坐标、数据库查询结果）、字典键、性能要求高的场景'}]
+    rs = ",".join([ str(i["id"]) for i in question_list])
     print(rs)
-

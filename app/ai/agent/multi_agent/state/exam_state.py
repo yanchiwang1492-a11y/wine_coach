@@ -28,8 +28,13 @@ class ExamState(TypedDict):
     #-----------------评价节点---
     #评价结果
     evaluation:str
-    #考试状态
+    #当前节点考试状态
     exam_step:str
+    #当前题目编号
+    question_id:int
+    #是否继续出题
+    continue_question:bool
+
 
 
 
