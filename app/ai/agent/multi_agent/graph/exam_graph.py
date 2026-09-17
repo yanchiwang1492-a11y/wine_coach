@@ -45,9 +45,14 @@ class ExamGraph:
         #配置检测点
         config = {"configurable":{"thread_id":session_id}}
         #采用异步流式
-        async for c,m in self.agent.astream(user_msg,config,stream_mode="messages"):
-            if c.content:
-                yield c.content
+        async for c,m in self.agent.astream(user_msg,config,stream_mode=["messages","custom"]):
+              if c =="messages":
+                  messages,meta = m
+                  yield messages.content
+              else:
+                  yield m
+
+
     #画图
     def draw(self):
         data = self.agent.get_graph().draw_mermaid_png()
