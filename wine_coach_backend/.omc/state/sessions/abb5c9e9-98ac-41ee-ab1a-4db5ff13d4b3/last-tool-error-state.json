@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:/Users/nalan/Desktop/Projects/wine_coach/wine_coach_backend\\\" && python -c \\\"\\nfrom memory.manager.session_manager import SessionManager\\nfrom memory.manager.memory_manager import M...",
+  "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 2, in <module>\r\n  File \"C:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_backend\\memory\\manager\\__init__.py\", line 1, in <module>\r\n    from memory.manager.session_manager import SessionManager\r\n  File \"C:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_backend\\memory\\manager\\session_manager.py\", line 16, in <module>\r\n    from memory.manager.prompt_builder import PromptBuilder\r\n  File \"C:\\Users\\nalan\\Desktop\\Projects\\...",
+  "timestamp": "2026-09-24T15:59:37.085Z",
+  "retry_count": 1
+}

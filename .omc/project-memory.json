@@ -1,0 +1,389 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1791514945180,
+  "projectRoot": "C:\\Users\\nalan\\Desktop\\Projects\\wine_coach",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "wine_coach_backend": {
+      "path": "wine_coach_backend",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1791514945156,
+      "keyFiles": [
+        "main.py",
+        "README.md",
+        "requirements.txt"
+      ]
+    },
+    "wine_coach_frontend": {
+      "path": "wine_coach_frontend",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1791514945157,
+      "keyFiles": [
+        "index.html",
+        "package-lock.json",
+        "package.json",
+        "README.md",
+        "vite.config.js"
+      ]
+    },
+    "wine_coach_frontend\\dist": {
+      "path": "wine_coach_frontend\\dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1791514945159,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "wine_coach_frontend\\node_modules": {
+      "path": "wine_coach_frontend\\node_modules",
+      "purpose": "Dependencies",
+      "fileCount": 1,
+      "lastAccessed": 1791514945159,
+      "keyFiles": []
+    },
+    "wine_coach_frontend\\src": {
+      "path": "wine_coach_frontend\\src",
+      "purpose": "Source code",
+      "fileCount": 2,
+      "lastAccessed": 1791514945160,
+      "keyFiles": [
+        "App.vue",
+        "main.js"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "wine_coach_frontend\\src\\components\\Chat\\Chat.vue",
+      "accessCount": 35,
+      "lastAccessed": 1791514989736,
+      "type": "directory"
+    },
+    {
+      "path": "wine_coach_backend",
+      "accessCount": 35,
+      "lastAccessed": 1791514992071,
+      "type": "directory"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node\\intent_node.py",
+      "accessCount": 32,
+      "lastAccessed": 1790665158343,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node\\manager_node.py",
+      "accessCount": 25,
+      "lastAccessed": 1790663989204,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node\\chat_node.py",
+      "accessCount": 24,
+      "lastAccessed": 1790661836284,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\memory_retrieval\\profile_agent.py",
+      "accessCount": 24,
+      "lastAccessed": 1790665877880,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\memory_save\\profile_memory.py",
+      "accessCount": 19,
+      "lastAccessed": 1790665879843,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node\\evaluate_node.py",
+      "accessCount": 17,
+      "lastAccessed": 1790655279094,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\tool\\question_tool.py",
+      "accessCount": 17,
+      "lastAccessed": 1790665906157,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\memory_retrieval\\summary_agent.py",
+      "accessCount": 16,
+      "lastAccessed": 1790656038875,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\state\\coach_state.py",
+      "accessCount": 16,
+      "lastAccessed": 1790665881168,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node\\question_node.py",
+      "accessCount": 14,
+      "lastAccessed": 1790665070262,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node\\answer_node.py",
+      "accessCount": 13,
+      "lastAccessed": 1790611852433,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\model\\my_model.py",
+      "accessCount": 13,
+      "lastAccessed": 1791515172507,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\app_context.py",
+      "accessCount": 12,
+      "lastAccessed": 1790660590714,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\manager\\memory_manager.py",
+      "accessCount": 11,
+      "lastAccessed": 1790655256558,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\memory_save\\long_memory.py",
+      "accessCount": 11,
+      "lastAccessed": 1790655257963,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\graph\\coach_graph.py",
+      "accessCount": 11,
+      "lastAccessed": 1791515008523,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\chat\\service\\chat_service.py",
+      "accessCount": 9,
+      "lastAccessed": 1791515000591,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\memory_retrieval\\long_agent.py",
+      "accessCount": 8,
+      "lastAccessed": 1790605812766,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\manager\\session_manager.py",
+      "accessCount": 8,
+      "lastAccessed": 1790655277487,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\chat\\controller\\chat_controller.py",
+      "accessCount": 8,
+      "lastAccessed": 1791515001249,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\schema\\intent_schema.py",
+      "accessCount": 7,
+      "lastAccessed": 1790660493798,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node\\router_agent.py",
+      "accessCount": 7,
+      "lastAccessed": 1790661809952,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\token_blacklist.py",
+      "accessCount": 6,
+      "lastAccessed": 1790611975218,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\memory_save\\summary_memory.py",
+      "accessCount": 6,
+      "lastAccessed": 1790655256385,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\users\\service\\users_service.py",
+      "accessCount": 5,
+      "lastAccessed": 1790609602523,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\tool\\history_tool.py",
+      "accessCount": 5,
+      "lastAccessed": 1790611888653,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\vosk_agent.py",
+      "accessCount": 5,
+      "lastAccessed": 1790611991594,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\tool\\send_email_tool.py",
+      "accessCount": 5,
+      "lastAccessed": 1790613917174,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\memory\\memory_save\\window_memory.py",
+      "accessCount": 5,
+      "lastAccessed": 1790655255961,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\main.py",
+      "accessCount": 5,
+      "lastAccessed": 1790672472011,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\redis_lock.py",
+      "accessCount": 5,
+      "lastAccessed": 1790675327082,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\pg_util.py",
+      "accessCount": 4,
+      "lastAccessed": 1790611799181,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\jwt_util.py",
+      "accessCount": 4,
+      "lastAccessed": 1790611960039,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_frontend\\src\\api\\chat.js",
+      "accessCount": 4,
+      "lastAccessed": 1790656750918,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\mysql_util.py",
+      "accessCount": 4,
+      "lastAccessed": 1790658797187,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\schema\\evaluate_schema.py",
+      "accessCount": 3,
+      "lastAccessed": 1790609564353,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\users\\dao\\users_dao.py",
+      "accessCount": 3,
+      "lastAccessed": 1790609602846,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\redis_util.py",
+      "accessCount": 3,
+      "lastAccessed": 1790611800176,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\chroma_util.py",
+      "accessCount": 3,
+      "lastAccessed": 1790611801170,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\chat\\service\\history_service.py",
+      "accessCount": 3,
+      "lastAccessed": 1790611890643,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\jwt_decode.py",
+      "accessCount": 3,
+      "lastAccessed": 1790611971168,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\ai\\agent\\multi_agent\\node",
+      "accessCount": 3,
+      "lastAccessed": 1791515010600,
+      "type": "directory"
+    },
+    {
+      "path": "wine_coach_backend\\common\\password_util.py",
+      "accessCount": 2,
+      "lastAccessed": 1790609590606,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\common\\console_util.py",
+      "accessCount": 2,
+      "lastAccessed": 1790609591042,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\chat\\controller\\history_controller.py",
+      "accessCount": 2,
+      "lastAccessed": 1790609601834,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_backend\\users\\controller\\users_controller.py",
+      "accessCount": 2,
+      "lastAccessed": 1790609602570,
+      "type": "file"
+    },
+    {
+      "path": "wine_coach_frontend\\src",
+      "accessCount": 2,
+      "lastAccessed": 1790656746669,
+      "type": "directory"
+    },
+    {
+      "path": "wine_coach_frontend",
+      "accessCount": 2,
+      "lastAccessed": 1790665921773,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}

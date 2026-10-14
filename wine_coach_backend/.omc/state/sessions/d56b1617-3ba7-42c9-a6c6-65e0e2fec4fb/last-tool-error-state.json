@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"PYTHONIOENCODING=utf-8 python create_data/seed_question_library_v2.py\",\"description\":\"运行 seed 脚本生成 300 题\"}",
+  "error": "Exit code 1\nC:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_backend\\create_data\\seed_question_library_v2.py:308: DeprecationWarning: 'db' is deprecated, use 'database'\r\n  main()\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_backend\\create_data\\seed_question_library_v2.py\", line 308, in <module>\r\n    main()\r\n  File \"C:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_backend\\create_data\\seed_question_library_v2.py\", line 299, in main\r\n ...",
+  "timestamp": "2026-09-29T05:49:21.730Z",
+  "retry_count": 2
+}

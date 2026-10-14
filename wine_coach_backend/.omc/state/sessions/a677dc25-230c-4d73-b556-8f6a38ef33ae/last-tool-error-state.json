@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"echo \\\"=== wine_max_web ===\\\"; ls -la \\\"C:/Users/nalan/Desktop/Projects/wine_max_web/\\\" 2>/dev/null; echo \\\"=== wine_max_server ===\\\"; ls -la \\\"C:/Users/nalan/Desktop/Projects/wine_max_ser...",
+  "error": "Exit code 2\n=== wine_max_web ===\n=== wine_max_server ===",
+  "timestamp": "2026-09-19T11:52:52.296Z",
+  "retry_count": 1
+}

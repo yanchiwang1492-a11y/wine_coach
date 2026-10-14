@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:/Users/nalan/Desktop/Projects/wine_coach/wine_coach_backend\\\" && ls -la .env 2>/dev/null && echo \\\"---ENV CONTENT---\\\" && cat .env 2>/dev/null; echo \\\"===parent===\\\"; ls -la ../.env...",
+  "error": "Exit code 2\n-rw-r--r-- 1 nalan 197609 393 Sep 17 17:55 .env\n---ENV CONTENT---\n# ========== 服务配置 ==========\nHOST=localhost\nPORT=8001\n\n# ========== Vosk 语音模型（必填，否则语音功能不可用） ==========\nVOSK_PATH=C:\\Users\\nalan\\Desktop\\Projects\\models\\vosk-model-cn-0.22\n\n# ========== 大模型（dashscope） ==========\nDASHSCOPE_API_KEY=sk-你的实际key\nMODEL_LINE_NAME=qwen-plus\nMODEL_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1\n===parent===",
+  "timestamp": "2026-09-17T13:11:45.888Z",
+  "retry_count": 1
+}

@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:/Users/nalan/Desktop/Projects/wine_coach/wine_coach_backend\\\" && echo \\\"=== ai/tool/schema ===\\\" && ls ai/tool/schema/ && echo \\\"=== ai/agent/vosk_agent 存在？ ===\\\" && ls ai/agent/vos...",
+  "error": "Exit code 2\n=== ai/tool/schema ===\nls: cannot access 'ai/tool/schema/': No such file or directory",
+  "timestamp": "2026-09-27T04:38:37.258Z",
+  "retry_count": 2
+}

@@ -1,0 +1,279 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1790660763303,
+  "projectRoot": "C:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_frontend",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vue",
+        "version": "3.5.40",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "5.4.0",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "cd \"C:/Users/nalan/Desktop/Projects/wine_coach/wine_coach_frontend\" && npm run build 2>&1 | tail -30",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1790660763268,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 2,
+      "lastAccessed": 1790660763268,
+      "keyFiles": [
+        "App.vue",
+        "main.js"
+      ]
+    },
+    "dist\\assets": {
+      "path": "dist\\assets",
+      "purpose": "Static assets",
+      "fileCount": 3,
+      "lastAccessed": 1790660763281,
+      "keyFiles": [
+        "index-BpLMKz0Q.css",
+        "index-YVdwg-Gv.js",
+        "wine_coach_homepage-DnvsuJ48.png"
+      ]
+    },
+    "src\\api": {
+      "path": "src\\api",
+      "purpose": "API routes",
+      "fileCount": 1,
+      "lastAccessed": 1790660763282,
+      "keyFiles": [
+        "chat.js"
+      ]
+    },
+    "src\\assets": {
+      "path": "src\\assets",
+      "purpose": "Static assets",
+      "fileCount": 1,
+      "lastAccessed": 1790660763282,
+      "keyFiles": [
+        "wine_coach_homepage.png"
+      ]
+    },
+    "src\\components": {
+      "path": "src\\components",
+      "purpose": "UI components",
+      "fileCount": 5,
+      "lastAccessed": 1790660763283,
+      "keyFiles": [
+        "History.vue",
+        "Home.vue",
+        "Login.vue"
+      ]
+    },
+    "src\\utils": {
+      "path": "src\\utils",
+      "purpose": "Utility functions",
+      "fileCount": 3,
+      "lastAccessed": 1790660763283,
+      "keyFiles": [
+        "auth.js",
+        "date.js",
+        "markdown.js"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src\\components\\Chat\\ChatMessageList.vue",
+      "accessCount": 7,
+      "lastAccessed": 1790661908091,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Chat\\Chat.vue",
+      "accessCount": 7,
+      "lastAccessed": 1790661969416,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Chat\\ChatHeader.vue",
+      "accessCount": 7,
+      "lastAccessed": 1790661995284,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 4,
+      "lastAccessed": 1790661491629,
+      "type": "directory"
+    },
+    {
+      "path": "src\\api\\chat.js",
+      "accessCount": 2,
+      "lastAccessed": 1790571924110,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Home.vue",
+      "accessCount": 2,
+      "lastAccessed": 1790662008441,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1790571919923,
+      "type": "file"
+    },
+    {
+      "path": "src\\main.js",
+      "accessCount": 1,
+      "lastAccessed": 1790571922489,
+      "type": "file"
+    },
+    {
+      "path": "src\\App.vue",
+      "accessCount": 1,
+      "lastAccessed": 1790571922731,
+      "type": "file"
+    },
+    {
+      "path": "src\\router\\index.js",
+      "accessCount": 1,
+      "lastAccessed": 1790571923172,
+      "type": "file"
+    },
+    {
+      "path": "vite.config.js",
+      "accessCount": 1,
+      "lastAccessed": 1790571923483,
+      "type": "file"
+    },
+    {
+      "path": "index.html",
+      "accessCount": 1,
+      "lastAccessed": 1790571923679,
+      "type": "file"
+    },
+    {
+      "path": "src\\utils\\auth.js",
+      "accessCount": 1,
+      "lastAccessed": 1790571924510,
+      "type": "file"
+    },
+    {
+      "path": "src\\utils\\date.js",
+      "accessCount": 1,
+      "lastAccessed": 1790571924788,
+      "type": "file"
+    },
+    {
+      "path": "src\\utils\\markdown.js",
+      "accessCount": 1,
+      "lastAccessed": 1790571925059,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Login.vue",
+      "accessCount": 1,
+      "lastAccessed": 1790571932729,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Register.vue",
+      "accessCount": 1,
+      "lastAccessed": 1790571933025,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\History.vue",
+      "accessCount": 1,
+      "lastAccessed": 1790571933447,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\SessionDetail.vue",
+      "accessCount": 1,
+      "lastAccessed": 1790571933643,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Chat\\ChatInput.vue",
+      "accessCount": 1,
+      "lastAccessed": 1790571937146,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Chat\\ChatSidebar.vue",
+      "accessCount": 1,
+      "lastAccessed": 1790571937671,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1790571944875,
+      "type": "file"
+    },
+    {
+      "path": "src\\components",
+      "accessCount": 1,
+      "lastAccessed": 1790661988582,
+      "type": "directory"
+    },
+    {
+      "path": "src",
+      "accessCount": 1,
+      "lastAccessed": 1790662008176,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}

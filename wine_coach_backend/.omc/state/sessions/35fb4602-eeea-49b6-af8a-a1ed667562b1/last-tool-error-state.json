@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:\\\\Users\\\\nalan\\\\Desktop\\\\Projects\\\\wine_coach\\\\wine_coach_backend\\\" && python -c \\\"\\nimport sys\\nsys.path.insert(0, '.')\\n\\n# 验证记忆系统类式架构\\nfrom memory.manager.session_manager import ...",
+  "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 9, in <module>\r\nUnicodeEncodeError: 'gbk' codec can't encode character '\\u2705' in position 0: illegal multibyte sequence",
+  "timestamp": "2026-09-24T16:17:13.001Z",
+  "retry_count": 1
+}

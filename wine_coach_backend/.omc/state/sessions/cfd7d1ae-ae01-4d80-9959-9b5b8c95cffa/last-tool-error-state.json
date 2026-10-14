@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"C:\\\\Users\\\\nalan\\\\Desktop\\\\Projects\\\\wine_coach\\\\wine_coach_backend\\\" && python -c \\\"\\nimport asyncio\\nfrom common.app_context import AppContext\\n\\nasync def test():\\n    tools = awai...",
+  "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 3, in <module>\r\n  File \"C:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_backend\\common\\app_context.py\", line 15, in <module>\r\n    from ai.agent.multi_agent.graph.coach_graph import WineCoachGraph\r\n  File \"C:\\Users\\nalan\\Desktop\\Projects\\wine_coach\\wine_coach_backend\\ai\\agent\\multi_agent\\graph\\coach_graph.py\", line 16, in <module>\r\n    from ai.agent.multi_agent.node.chat_node import chat_node\r\n  File \"C:\\Users\\nalan\\Des...",
+  "timestamp": "2026-09-24T07:22:10.628Z",
+  "retry_count": 1
+}
